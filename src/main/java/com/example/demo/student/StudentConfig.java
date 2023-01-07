@@ -15,7 +15,9 @@ public class StudentConfig {
 
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository repository) {
+
         return args -> {
+
             Student madushan = new Student(
                     "Madushan",
                     LocalDate.of(2000, 6, 5),
@@ -24,7 +26,7 @@ public class StudentConfig {
 
             Student alex = new Student(
                     "Alex",
-                    LocalDate.of(2010,7, 15),
+                    LocalDate.of(2000,7, 15),
                     "Madushan@gmail.com"
             );
 
